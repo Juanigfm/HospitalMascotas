@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="UP">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>spring.model.Administrador</class>
+		<class>spring.model.Desparacitacion</class>
+		<class>spring.model.Dueno</class>
+		<class>spring.model.Enfermedad</class>
+		<class>spring.model.Evento</class>
+		<class>spring.model.FichaPublica</class>
+		<class>spring.model.HistorialReproductivo</class>
+		<class>spring.model.IntervencionQuirurgica</class>
+		<class>spring.model.Mascota</class>
+		<class>spring.model.Recordatorio</class>
+		<class>spring.model.Usuario</class>
+		<class>spring.model.Vacunacion</class>
+		<class>spring.model.Veterinario</class>
+		<class>spring.model.Visita</class>
+		<properties>
+			<property name="hibernate.connection.driver_class"
+				value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.password" value="" />
+			<property name="hibernate.connection.url"
+				value="jdbc:mysql://localhost:3306/hospital" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.default_schema" value="hospital" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQL8Dialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
